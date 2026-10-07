@@ -1,0 +1,31 @@
+1. Create a django project with all the librries and default set-up
+
+2.create an app "clients'
+
+3.clients model:
+-user (extends the deafult user model)
+-attributes:
+ -avatar:imagefield | default parth: 'user/avatar/'
+ -birthdate:datefield
+ -gender:charfield
+
+4. handle user serializers.py with create and update method to has the password.
+
+5.handle user views.py using standards 
+A. post |get (all)
+B. get(retrieve) |patch | delete
+
+6.expose the api in urls.py with our said standards
+
+7.test all exposed apis.
+
+
+
+
+
+
+
+
+
+
+
