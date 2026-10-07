@@ -1,14 +1,7 @@
 from django.contrib import admin
+from django.contrib.auth.admin import UserAdmin
+from .models import CustomUser
 
 # Register your models here.
-from  .models import User 
 
-admin.site.register(user)
-
-from rest_framework import serializers
-from .models import user
-
-class UseSerializer(Serializers.modelSerializer):
-    class meta:
-        model = User
-        fields = ['id', 'username', 'email', 'avatar']
+admin.site.register(CustomUser, UserAdmin)
